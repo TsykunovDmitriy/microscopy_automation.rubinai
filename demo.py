@@ -48,7 +48,7 @@ def main(data_dir, results_dir):
                 print(f'Working with file {data.info["path_to_image"][idx]} is...')
                 #predict mask
                 pr_mask = segmentaton_model.predict(inputs)
-                mask = preprocessing_for_predict_mask(pr_mask, image.shape, threshold=0.3)
+                mask = preprocessing_for_predict_mask(pr_mask, image.shape, threshold=0.5)
                 coor_bnb = getBoundingBox(image, mask)
                 #classification
                 for_classifier = cutLeukocyte(image, coor_bnb)
