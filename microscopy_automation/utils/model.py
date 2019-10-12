@@ -1,5 +1,6 @@
 import torch
 import cv2
+from PIL import Image
 from torchvision import models
 import segmentation_models_pytorch as smp
 
@@ -11,12 +12,7 @@ class SegmentationModel:
         self.encoder_name = 'resnet34'
         self.device = device
         
-
-        self.model = smp.Unet(
-            encoder_name=self.encoder_name,  
-            classes=1
-        )
-        self.model.load_state_dict(torch.load(self.path, map_location=self.device))
+        self.model = torch.load(self.path, map_location=self.device)
         self.model.eval()
 
     def _to_device(self, device):
@@ -40,9 +36,7 @@ class ClassificationModel:
         self.device = device
         self.classes = classes
 
-        self.model = models.resnet50()
-        self.model.fc = torch.nn.Linear(2048, 5)
-        self.model.load_state_dict(torch.load(self.path, map_location = self.device))
+        self.model = torch.load(self.path, map_location = self.device)
         self.model.eval()
     
     def _to_device(self, device):
