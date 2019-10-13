@@ -2,7 +2,7 @@
 Package for automating leukocyte microscopy implemented in Python with used PyTorch deep learning framework.
 
 This application was created as part of a decision support system for a microscopy automation project. 
-At the heart of the working are two convolutional neural networks. First for segmentation, second for classification.
+At the heart of the working there are two convolutional neural networks. First one is for segmentation, second one is for classification.
 The pipeline of detection and classification of leukocytes is presented in the figure below. 
 
 ![alt text](https://raw.githubusercontent.com/TsykunovDmitriy/microscopy_automation.rubinai/master/pipeline_demonstration_1.png)
@@ -35,7 +35,6 @@ python demo.py
 ```
 for launching with test images, which are in folder `images`. 
 
-For stopping you need click Control-C. At the end of the programm work, the research results will be recorded in the info file `path_to_results/info.json`.
+During programs work you may add new files to the folder `path_to_images`. And programme will be processing them in real-time.
 
-
-
+For stopping you need click Control-C. At the end of the programs work, the research results will be recorded in the info file `path_to_results/info.json`.
