@@ -2,7 +2,8 @@
 Package for automating leukocyte microscopy implemented in Python with used PyTorch deep learning framework.
 
 <p align="center">
-  <img width="460" src="https://raw.githubusercontent.com/TsykunovDmitriy/microscopy_automation.rubinai/master/rubinai.jpg">
+  <img width="400" src="https://raw.githubusercontent.com/TsykunovDmitriy/microscopy_automation.rubinai/master/rubinai.jpg">
+  <img width="400" src="https://raw.githubusercontent.com/TsykunovDmitriy/microscopy_automation.rubinai/master/bmstu.png">
 </p>
 
 This application was created as part of a decision support system for the microscopy automation project RubinAI. RubinAI is project carried out at the department of biomedical technical systems at Bauman Moscow State Technical University.
