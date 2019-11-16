@@ -1,7 +1,10 @@
 # Leukocyte microscopy automation project
 Package for automating leukocyte microscopy implemented in Python with used PyTorch deep learning framework.
 
-This application was created as part of a decision support system for a microscopy automation project. 
+This application was created as part of a decision support system for the microscopy automation project RubinAI. RubinAI - project carried out at the department of biomedical technical systems at Bauman Moscow State Technical University.
+
+![alt text](https://raw.githubusercontent.com/TsykunovDmitriy/microscopy_automation.rubinai/master/rubinai.jpg)
+
 At the heart of the working there are two convolutional neural networks. First one is for segmentation, second one is for classification.
 The pipeline of detection and classification of leukocytes is presented in the figure below. 
 
