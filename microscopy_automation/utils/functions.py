@@ -1,7 +1,7 @@
 import cv2
 import numpy as np
 
-def getBoundingBox(img, mask, prc = 0.2):
+def getBoundingBox(mask, prc = 0.2):
     _, contours, h = cv2.findContours(mask, cv2.RETR_TREE, cv2.CHAIN_APPROX_SIMPLE)
     coor = []
     for cnt in contours:
